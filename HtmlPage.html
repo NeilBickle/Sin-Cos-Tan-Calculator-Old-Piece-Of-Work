@@ -1,0 +1,31 @@
+﻿
+<html>
+<head>
+    <title>Sin, Cos And Tan calculator for Numbers</title>
+</head>
+<body>
+    <p><b>Calculate The Sin, Cos And Tan of A Number.</b></p>
+    Sin<input id="txtSin" type="text" />
+    <input id="btnTotal" type="button" value="Total" onclick="btnTotal_onclick()"/>
+    Cos<input id="txtCos" type="text" />
+    <input id="btnTotal2" type="button" value="TotalCos" onclick="btnTotal2_onclick()" />
+    Tan<input id="txtTan" type="text" />
+    <input id="btnTotal3" type="button" value="TotalTan" onclick="btnTotal3_onclick()" />
+    <p id="parResult" style="background-color: red;"/>
+
+</body>
+</html>
+<script language="javascript">
+    function btnTotal_onclick() {      
+        parResult.innerText = Math.sin(txtSin.value);
+    }
+
+    function btnTotal2_onclick() {
+        parResult.innerText = Math.cos(txtCos.value);
+    }
+
+    function btnTotal3_onclick() {
+        parResult.innerText = Math.tan(txtTan.value);
+    }
+
+</script>
